@@ -1,0 +1,16 @@
+#code of Troy
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main(){
+	int base, height;
+	
+	printf("traingle's base : ");
+	scanf("%d",&base);
+	printf("triangle's height : ");
+	scanf("%d",&height);
+	printf("area : %f",base*height*0.5);
+	
+}
