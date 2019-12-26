@@ -1,0 +1,12 @@
+//code of Troy
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main(){
+	float x;
+	printf("Find value of x^2+3x+11\nEnter x:");
+	scanf("%f",&x);
+	printf("value : %f", (x*x) + (3*x) + 11);
+}
