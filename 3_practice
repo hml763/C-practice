@@ -1,0 +1,10 @@
+#include <stdio.h>
+
+int main(){
+	
+	int mile;
+	
+	printf("Enter miles : ");
+	scanf("%d",&mile);
+	printf("%d mile is %f km.",mile,mile*(1.6));
+}
