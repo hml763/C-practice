@@ -1,0 +1,33 @@
+//code of Troy
+
+// overflow : 메모리값의 최대값이 10일때 10보다 커짐 (값이 -10~10이면 10보다 커지면 -10으로 감)
+// Underflow : 메모리값의 최소값이 -10일때 -10보다 작아짐 (값이 -10~10이면 -10보다 작아지면 10으로 감)
+
+#include <stdio.h>
+#include <limits.h>
+
+int main(void){
+	
+	signed short signed_short_max = SHRT_MAX;	//limits.h 에 내장되어 있는 함수  
+	signed short signed_short_min = SHRT_MIN;
+	
+	unsigned short unsigned_short_max = USHRT_MAX;
+	unsigned short unsigned_short_min = 0;	
+	
+	signed_short_max = signed_short_max+1;
+	unsigned_short_max = unsigned_short_max + 1;
+	signed_short_min = signed_short_min-1;
+	unsigned_short_min = unsigned_short_min - 1;
+	
+	printf("signed short overflow : %d\n",signed_short_max);
+	printf("unsigned short overflow : %d\n\n",unsigned_short_max);
+	
+	printf("Overflow!!!\n\n\n");
+	
+	printf("signed short underflow : %d\n",signed_short_min);
+	printf("unsigned short underflow : %d\n\n",unsigned_short_min);	
+	
+	printf("Underflow!!!\n\n\n");
+	
+	return 0;	
+}
