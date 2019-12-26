@@ -1,0 +1,24 @@
+//code of Troy
+
+//practice sizeof
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main(){
+	int x, arr_int[500];
+	short arr_short[500];
+	
+	printf("size of variable x: %d\n", sizeof(x));
+	printf("size of char type : %d\n", sizeof(char));
+	printf("size of int type: %d\n", sizeof(int));
+	printf("size of float type: %d\n", sizeof(float));
+	printf("size of double type: %d\n", sizeof(double));
+	printf("size of short type: %d\n", sizeof(short));
+	printf("size of long type: %d\n", sizeof(long));
+	printf("size of arr_int type : %d\n", sizeof(arr_int));
+	printf("size of arr_short type : %d\n", sizeof(arr_short));
+
+	printf("Unit : byte");
+}
