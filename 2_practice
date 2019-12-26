@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 int main(){
-	int num[3] = {0,0,0};
-	int j,sum=0,ave=0;
+	int j,num[3] = {0,0,0};
+	float sum=0,ave=0;
 	
 	for(j=0;j<3;j++){
 		printf("실수를 입력하시오 : ");
@@ -10,6 +10,5 @@ int main(){
 		sum = sum + num[j];
 	}
 	ave = sum/j;
-	printf("sum : %d\nave : %d",sum,ave); 
-
+	printf("sum : %f\nave : %f",sum,ave); 
 }
