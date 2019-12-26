@@ -1,0 +1,23 @@
+//code of Troy
+
+//practice signed, unsigned, literally, it means 부호가 있다, 없다. 
+// signed short : -32768 ~ 32768
+//unsinged short : 0 ~ 65535  
+
+#include <stdio.h>
+#include <limits.h>
+
+int main(void){
+	printf("Signed, Unsigned\n");
+	
+	signed short signed_short_max = SHRT_MAX;	//limits.h 에 내장되어 있는 함수  
+	signed short signed_short_min = SHRT_MIN;
+	
+	unsigned short unsigned_short_max = USHRT_MAX;
+	unsigned short unsigned_short_min = 0;	
+	
+	printf("signed short : %d ~ %d\n",signed_short_min,signed_short_max);
+	printf("unsigned short : %d ~ %d",unsigned_short_min,unsigned_short_max);
+	
+	return 0;	
+}
