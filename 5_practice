@@ -1,0 +1,13 @@
+//code of Troy
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main(){
+	float F;
+	printf("enter Farenheit : ");
+	scanf("%f",&F);
+	float C = (F-32)*5/9;
+	printf("Ferenheit to Celious : %f",C);
+}
