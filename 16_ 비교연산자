@@ -1,0 +1,18 @@
+//code of Troy 
+
+//comma
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+	
+	int x = 9, y = 10;
+		
+	printf("bit AND = %08X\n", x&y);
+	printf("bit OR = %08X\n", x|y);
+	printf("bit XOR = %08X\n", x^y);
+	printf("bit NOT = %08X\n", ~x);	
+	
+	return 0;
+}
