@@ -1,1 +1,98 @@
+//code of Troy 
 
+//program
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+	
+	int number=0;
+	
+	printf("Chapter 5\n수식과 연산자\n");
+	printf("Press 1 to find max number program\nPress 2 to execute divide number program\npress 3 to execute bit moving program\npress 4 to quit\n");
+	scanf("%d",&number);
+	
+	while(number == 1 | 2 | 3){
+	
+		if(number == 1){
+			find_max();
+			
+		}
+		
+		else if(number == 2){
+			dividing_number();
+		}
+		
+		else if(number == 3){
+			bitbit();
+		}
+		
+		else if(number == 4){
+			printf("Thank you! byebye\n");
+			break;
+		}
+		
+		
+		else{
+			printf("You pressed the wrong button. Please type again\n");
+			
+		}
+		printf("Press 1 to find max number program\nPress 2 to execute divide number program\npress 3 to execute bit moving program\npress 4 to quit\n");
+		scanf("%d",&number);
+	}
+	
+	return 0;
+}
+
+int find_max(){
+	int i,num=0,j;
+	int arr[]={0,0,0};
+	
+	printf("type in 3 numbers\n");
+	for(i=0;i<3;i++){
+		scanf("%d",&arr[i]);
+	}
+	
+	int temp=0;	
+	for(i=0;i<3;i++){
+		for(j=i+1;j<3;j++){
+			if(arr[i]<arr[j]){
+				temp = arr[j];
+				arr[j] = arr[i];
+				arr[i] = temp;
+			}	
+		}
+	}
+	printf("max : %d\n\n",arr[0]);
+}
+
+
+
+int dividing_number(){
+	
+	int num;
+	printf("type in an integer : ");
+	scanf("%d",&num);
+	
+	printf("십의 자리 : %d ",num/10), printf("일의 자리 : %d\n",num%10);
+	
+}
+
+
+int bitbit(){
+	
+	unsigned int uns;
+	char c[]={'m','m','m','m'};
+	int i;
+	
+	for(i=0;i<4;i++){
+		printf("%d 째 문자 : \n", i);
+		scanf("%c",&c[i]); 
+		
+	}
+	for(i=0;i<4;i++){
+		printf("%c\n",c[i]);
+	}
+		
+}
