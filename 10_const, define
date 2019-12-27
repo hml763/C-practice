@@ -1,0 +1,20 @@
+//code of Troy
+
+//practice const, define
+
+#include <stdio.h>
+
+#define fixed_num 100
+const int fixed_num2 = 1000;
+
+int main(){
+	
+	printf("const : %d\n#define : %d\n\n",fixed_num,fixed_num2);
+	printf("const : %d\n#define : %d\n\n",fixed_num+1,fixed_num2+1);
+	
+//	fixed_num = fixed_num + 1;			occurs error
+//	fixed_num2 = fixed_num2 + 1;		occurs error
+	printf("const : %d\n#define : %d\n\n",fixed_num,fixed_num2);
+	
+	return 0;
+}
