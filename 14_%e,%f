@@ -1,0 +1,14 @@
+//code of Troy
+
+//New features 
+#include <stdio.h>
+ 
+int main(void){
+
+	float r_n;
+	printf("type a real number");
+	scanf("%f",&r_n);
+	printf("real number format : %f\nexponentual format : %e\n",r_n,r_n);
+ 
+    return 0;
+}
