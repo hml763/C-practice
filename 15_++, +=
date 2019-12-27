@@ -5,7 +5,7 @@
 
 int main() {
 	
-	int x = 10,y=20;
+	int x = 10, y = 20;
 	
 	printf("x = %d\ty=%d\n",x,y);
 	printf("x = %d\ty=%d\n",++x,++y);
@@ -14,6 +14,24 @@ int main() {
 	x+=1;
 	y+=1;
 	printf("x = %d\ty=%d\n",x,y);
-		
+	x*=2;
+	y-=3;
+	printf("x = %d\ty=%d\n",x,y);	
+	y/=5;	
+	x%=10;
+	printf("x = %d\ty=%d\n",x,y);
+	
+	x = x << 2;	//bit이동 연산자 : 1비트씩 왼쪽으로 이동함. 
+	y<<=1; // 1bit 만큼 옮기면 2를 곱해주는 것과 같음.  
+	printf("x = %d\ty=%d\n",x,y);
+	
+	x = x | 10;	//OR gate
+	y = y & 10; //AND gate
+	printf("x = %d\ty=%d\n",x,y);
+	
+	y = ~y;			//not gate
+	x = x ^ 10; 	//xor gate
+	printf("x = %d\ty=%d\n",x,y);
+				
 	return 0;
 }
