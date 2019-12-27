@@ -13,7 +13,7 @@ int main(void) {
 	printf("Press 1 to find max number program\nPress 2 to execute divide number program\npress 3 to execute bit moving program\npress 4 to quit\n");
 	scanf("%d",&number);
 	
-	while(number == 1 | 2 | 3){
+	while(number == 1 || 2 || 3 || 4){
 	
 		if(number == 1){
 			find_max();
