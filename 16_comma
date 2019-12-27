@@ -1,0 +1,17 @@
+//code of Troy 
+
+//comma
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+		
+	printf("This"), printf(" Works"), printf("?!\n");
+	
+	int x = 10, y = 12, z = 13;	
+	
+	if(x==10){ printf("ready\n");} if(y==12){printf("action\n");}
+	
+	return 0;
+}
