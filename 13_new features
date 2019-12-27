@@ -1,0 +1,17 @@
+//code of Troy
+
+//New features 
+#include <stdio.h>
+ 
+int main(void){
+
+	int id, pass;
+	
+	printf("enter id and password in 4 digits\nid : ____\b\b\b\b");		// 	\b 이거는 커서를 뒤로 가게함. 
+	scanf("%d",&id);
+	printf("pass : ____\b\b\b\b"); 
+	scanf("%d",&pass);
+	printf("\aEnterd id is \"%d\", and password is \"%d\".\n",id,pass); 	// \a : 경고음 발생, " 치려면 \" 를 쳐야함. 
+ 
+    return 0;
+}
