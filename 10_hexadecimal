@@ -1,0 +1,27 @@
+//code of Troy
+
+//16 진수 
+
+#include <stdio.h>
+
+int main(){
+	int x = 3;
+	int y = -3;
+	int z = 8;
+	int a = 12;
+	
+	 
+	printf("x=%08X\n",x);
+	printf("y=%08X\n",y);
+	printf("x+y=%08X\n",x+y);
+
+	printf("x=%16X\n",x);
+	printf("y=%16X\n",y);
+	printf("x+y=%16X\n",x+y);
+	
+	printf("z=%3X\n",z);
+	printf("a=%3X\n",a);
+	printf("a+z=%3X\n",z+a);	
+	
+	return 0;
+}
