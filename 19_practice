@@ -9,7 +9,7 @@ int main(){
 	char letters;
 	int num,num2,choose=0;
 	
-	printf("Choose a program(1. dicrimating letter, 2. finding aliquot, 3. rock papaer scissor) : ");
+	printf("Choose a program\n----------------------------\n1. dicrimating letter\n2. finding aliquot\n3. rock papaer scissor\n4. calender digit\n5. calculating Fee\n6. \n7. \n8. Exit\n");
 	scanf("%d",&choose);
 	
 	while(1){	
@@ -26,10 +26,19 @@ int main(){
 		else if(choose == 4)
 			program4();
 			
+		else if(choose == 5)
+			program5(num,num2);
+
+		else if(choose ==6)
+			program6();
+			
+		else if(choose == 7)
+			program7();	
+				
 		else
 			printf("You choosed the wrong number. Please type again\n");
 		
-		printf("Choose a program(1. dicrimating letter, 2. finding aliquot, 3. rock papaer scissor) : ");
+		printf("Choose a program\n-------------------------\n1. dicrimating letter\n2. finding aliquot\n3. rock papaer scissor\n4. calender digit\n5. calculating Fee\n6. \n7. \n8. Exit\n");
 		scanf("%d",&choose);	
 	}
 	
@@ -175,6 +184,42 @@ int program4(){
 		case 12:
 			printf("DEC\n");				
 			break;
+			
+		default:
+			printf("You typed in a wrong number. Please type 1~12\n");	
 	}
 	
+}
+
+
+int program5(int age, int time){
+	
+	int fee;
+	
+	printf("type in current time, and age : ");
+	scanf("%d %d", &age, &time);
+	
+	if(time <= 17 && age > 12  && age < 65)
+		fee = 34000;
+	
+	else if(time <= 17 && age > 3 && age <= 12)
+		fee = 25000;	
+	
+	else
+		fee = 10000;
+	
+	printf("fee is %d\n\n",fee);	
+}
+
+int program6(){
+	
+	
+	printf("program 6\n");
+}
+
+
+int program7(){
+	
+	
+	printf("Program 7\n");
 }
