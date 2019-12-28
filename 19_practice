@@ -1,0 +1,180 @@
+//Code of Troy
+
+#include <stdio.h>
+#include <stdlib.h>	//for rand, srand program2
+#include <time.h>	//for time program2
+
+int main(){
+	
+	char letters;
+	int num,num2,choose=0;
+	
+	printf("Choose a program(1. dicrimating letter, 2. finding aliquot, 3. rock papaer scissor) : ");
+	scanf("%d",&choose);
+	
+	while(1){	
+		
+		if(choose == 1)
+			programs();
+					
+		else if(choose == 2)
+			program2();
+			
+		else if(choose == 3)
+			program3();
+		
+		else if(choose == 4)
+			program4();
+			
+		else
+			printf("You choosed the wrong number. Please type again\n");
+		
+		printf("Choose a program(1. dicrimating letter, 2. finding aliquot, 3. rock papaer scissor) : ");
+		scanf("%d",&choose);	
+	}
+	
+	return 0;
+}
+
+int programs(){
+	
+	char letter; 	
+	printf("type in a letter :");
+	scanf("%s",&letter);
+	
+	if(letter == 'a' || letter == 'e' || letter == 'i' || letter == 'o' || letter=='u'){
+		printf("Vowel\n\n");
+	}
+	else{
+		printf("Consonant\n\n");
+	}
+	
+}
+
+int program2(int a, int b){
+	
+//	int num, num2;
+	printf("Type in an integer : ");
+	scanf("%d",&a);
+	printf("Type in an integer : ");
+	scanf("%d",&b);
+	
+	if(a%b == 0){
+		printf("aliquot\n\n");
+	}
+	
+	else{
+		printf("Not a aliquot\n\n");
+	}
+	
+}
+
+int program3(int you){
+
+	
+	srand(time(NULL));
+	int random = (rand()%3) + 1;
+	printf("random : %d",random);
+	
+	printf("Choose(1: scissor, 2: Rock, 3: Paper)\n");
+	scanf("%d",&you);
+	
+	switch(random){
+		case 1:
+			if(you == random)
+				printf("Tie\n");
+			
+			else if(you == 2)
+				printf("You Win\n");
+			
+			else if(you == 3)
+				printf("You Lose\n");
+				
+			break;
+			
+		case 2:
+			if(you == random)
+				printf("Tie\n");
+				
+			else if(you == 3)
+				printf("You Win\n");
+			
+			else if(you == 1)
+				printf("You Lose\n");
+										
+			break;
+			
+		case 3:
+			if(you == random)
+				printf("Tie\n");
+				
+			else if(you == 1)
+				printf("You Win\n");
+			
+			else if(you == 2)
+				printf("You Lose\n");
+				
+			break;
+			
+		default:
+			printf("Wrong number please type again\n");
+	}
+		
+}
+
+int program4(){
+	int month;
+	printf("type in month in number(1-12) : ");
+	scanf("%d",&month);
+	
+	switch(month){
+		case 1 : 
+			printf("JAN\n");
+			break;
+		
+		case 2:
+			printf("FEB\n");
+			break;
+			
+		case 3:
+			printf("MAR\n");
+			break;
+			
+		case 4:
+			printf("APR\n");
+			break;
+			
+		case 5:
+			printf("MAY\n");
+			break;
+			
+		case 6:
+			printf("JUN\n");
+			break;
+			
+		case 7:
+			printf("JUL\n");
+			break;
+			
+		case 8:
+			printf("AUG\n");
+			break;
+			
+		case 9:
+			printf("SEP\n");
+			break;
+			
+		case 10:
+			printf("OCT\n");							
+			break;
+			
+		case 11:
+			printf("NOV\n");
+			break;
+			
+		case 12:
+			printf("DEC\n");				
+			break;
+	}
+	
+}
