@@ -1,0 +1,23 @@
+//Code of Troy 
+
+//using Function1
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#include <limits.h>
+
+int main(){
+	
+	int a=2,b=3;
+
+	printf("%d\n",power(a,b));
+	
+	return 0;
+}
+
+int power(int n, int m){
+	
+	return n*m;
+}
+
