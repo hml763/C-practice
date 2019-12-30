@@ -1,0 +1,26 @@
+//Code of Troy 
+
+//Finding prime numbers
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#include <limits.h>
+
+int main(){
+	
+	int i,j,num;
+	
+	printf("finding prime numbers between 2~100\n");
+	for(i=2;i<101;i++){
+		num=0;
+		for(j=2;j<101;j++){
+			if(i%j == 0)
+				num+=1;
+		}
+		
+		if(num<2)
+			printf("%d, %d\n",i,num);
+	}
+	
+}
