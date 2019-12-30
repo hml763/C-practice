@@ -1,0 +1,24 @@
+//Code of Troy 
+
+//star shape; classic
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#include <limits.h>
+
+int main(){
+	
+	int i,j,num;
+	
+	printf("Type in an integer : ");
+	scanf("%d",&num);
+	
+	for(i=1;i<num+1;i++){
+		for(j=1;j<=i;j++){
+			printf("%d",j);
+		}
+		printf("\n");
+
+	}
+}
