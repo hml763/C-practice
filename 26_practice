@@ -1,0 +1,35 @@
+//Code of Troy 
+
+//using Function1
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#include <limits.h>
+
+int main(){
+
+	int num=1;
+	while(num > 0){
+		print_value(num);
+		num = print_value();
+	}
+
+	
+	return 0;
+		
+}
+
+int print_value(int num){
+	
+	printf("print your value(- value for exit) : ");
+	scanf("%d",&num);
+	int i;
+	for(i=0;i<num;i++)
+		printf("*");	
+	printf("\n\n");
+	
+	if(num < 0)
+		return num;
+	
+}
