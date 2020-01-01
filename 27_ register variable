@@ -1,0 +1,19 @@
+//Code of Troy 
+
+//using Function1
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#include <limits.h>
+
+int main(){
+
+	register int k = 10;
+	//keyword register saves variables into cpu register. => 레지스터는 CPU에 들어있는 저장공간 이기에 데이터를 읽고 쓰는 속도가 아주 빠르다.
+	
+	//CPU에 따라 다르지만 일반적으로 갯수가 제한되어 있다. 적절히 사용되면 프로그램 실행 속도 높인다. 특히 루프를 제어하는 변수를 사용하면 좋다. 요새는 컴파일러가 알아서 최적화 과정을 통해 CPU레지스터를 적절히 사용함.
+	//레지스터변수에는 주소를 추출하는 연산자 &를 사용하면 컴파일 오류가 발생한다. 레지스터는 주소가 없기 때문 
+}
+	
+	
