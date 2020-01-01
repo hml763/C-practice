@@ -1,0 +1,19 @@
+//Code of Troy
+
+// 최대공약수 구하기, return 잘쓰기 
+#include <Stdio.h>
+
+int gcd(int x, int y);
+
+int main(){
+	
+	printf("%d\n",gcd(30,20));
+}
+
+int gcd(int x, int y){
+	if(y==0)
+		return x;
+		
+	else
+		return gcd(y,x%y);	//x%y x를 y로 나눠서 나머지 , 여기서는 결국 y값이 x위치로 가게 되고 y위치에는 x%y로 가게된다.  
+}
