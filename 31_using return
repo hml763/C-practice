@@ -1,0 +1,25 @@
+ //Code of Troy
+
+//return 잘쓰기 
+#include <Stdio.h>
+
+#define END 321
+
+int returns(int x);
+
+int main(){
+	int num;
+	
+	scanf("%d",&num);
+	printf("%d, %d\n",num, returns(num));
+	
+	return 0;
+}
+
+int returns(int x){
+		
+	return x*x;
+
+	
+}
+
